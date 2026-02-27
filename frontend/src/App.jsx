@@ -15,7 +15,7 @@ function App() {
     
     setLoading(true)
     try {
-      const response = await axios.post('http://127.0.0.1:8000/generate', {
+      const response = await axios.post('https://auto-doc-ai.onrender.com/generate', {
         title: title || "API Sem Nome",
         raw_json: JSON.parse(jsonInput) 
       })
